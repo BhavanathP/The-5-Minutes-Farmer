@@ -57,21 +57,21 @@ Examples:
 - Move card → `In Progress` → `Done` when complete.  
 ---
 
-## GDD
+# GDD
 
-# Project Title 
+## Project Title 
 - The 5 Minutes Farmer 
-# Genre 
+## Genre 
 - Casual / Farming / Time Management 
-# Platform 
+## Platform 
 - PC (expandable later) 
-# Camera 
+## Camera 
 - Top-down 2D 
-# High-Level Concept 
+## High-Level Concept 
 The 5 Minutes Farmer is a short, fast-paced farming game where the player has only 5 minutes 
 of real time to grow, harvest, and sell as many crops as possible.The game is designed as a 
 prototype test for farming loops, scoring systems, and short-session gameplay. 
-# Core Gameplay Loop 
+## Core Gameplay Loop 
 1. The player moves around the farm grid. 
 2. On each tile, they can: 
 -  Plant seed 
@@ -80,10 +80,10 @@ prototype test for farming loops, scoring systems, and short-session gameplay.
 3. Each harvested crop adds to the score. 
 4. Crops vary in growth time and point value. 
 5. When the timer reaches 0:00, the game ends, and the final score is shown. 
-# Controls 
+## Controls 
 -  WASD / Arrow Keys → Move 
 -  E → Interact (plant/water/harvest) 
-# Features in Scope 
+## Features in Scope 
 -  Timer system (5 minutes countdown) 
 -  Farm grid with tile states (Empty → Planted → Watered → Growing → Harvestable) 
 -  2 crop types: Carrot (fast, low points), Corn (slow, high points) 
@@ -92,24 +92,24 @@ prototype test for farming loops, scoring systems, and short-session gameplay.
 -  UI elements: Timer, Score, Game Over screen 
 -  Basic sound effects (plant, water, harvest, game over) 
 -  Placeholder 2D art (tiles, crops, farmer) 
-# Stretch Goals (Optional) 
+## Stretch Goals (Optional) 
 -  Random rain event (auto-waters crops) 
 -  Persistent high score system 
 -  Particle effects & polish 
-# Art & Style 
+## Art & Style 
 -  Simple pixel/cartoon style
 -  Bright colors, cheerful tone 
 -  Minimal UI for clarity 
-# Sound Design 
+## Sound Design 
 -  Upbeat farming background loop 
 -  SFX for planting, watering, harvesting, game over 
 ---
 
-## Technical Design Document (TDD) 
+# Technical Design Document (TDD) 
 This TDD describes the modular architecture, systems, and components required to implement 
 The 5 Minutes Farmer. It acts as a blueprint for development, ensuring clean, scalable, and 
 reusable code. 
-# Week 1 – Core Systems 
+## Week 1 – Core Systems 
 1. Player Movement + Interaction 
 -  Input System → abstraction for keyboard/controller/mobile 
 -  PlayerManager → central façade, holds references 
@@ -132,7 +132,7 @@ reusable code.
 -  ScoreManager → tracks points, raises OnScoreChanged event 
 -  UIManager → listens to ScoreManager/GameTimer, updates UI 
 -  GameOverUI → shows final score, restart button 
-# Week 2 – Expansion & Polish 
+## Week 2 – Expansion & Polish 
 5. Second Crop Type + Shop System 
 -  CropData (ScriptableObject) → defines crop properties (name, growth, value) 
 -  ShopManager → UI for buying seeds/upgrades 
