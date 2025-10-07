@@ -1,5 +1,4 @@
 # 🌱 5 Minute Farmer  
-_A Plug&Play Studio Prototype_  
 
 ## 🎮 Overview  
 **5 Minute Farmer** is a short, fast-paced farming game where the player has only **5 minutes of real time** to plant, grow, harvest, and sell crops.
