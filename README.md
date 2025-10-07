@@ -20,16 +20,7 @@
 
 ## 🚀 Development Timeline  
 **Week 1 – Core Systems**  
-- Player movement + interaction  
-- Farm grid + tile states  
-- Timer + crop growth/harvest  
-- Score system + basic UI  
-
 **Week 2 – Expansion & Polish**  
-- Add 2nd crop type + shop system
-- Audio + placeholder art  
-- Playtest + bug fixes  
-- Final polish + build
 
 # 👩‍💻 Contributing Guidelines – 5 Minute Farmer
 
