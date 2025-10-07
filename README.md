@@ -19,8 +19,8 @@
 - **Communication:** Slack (Plug&Play Studio)  
 
 ## 🚀 Development Timeline  
-**Week 1 – Core Systems**  
-**Week 2 – Expansion & Polish**  
+- Week 1 – Core Systems
+- Week 2 – Expansion & Polish  
 
 # 👩‍💻 Contributing Guidelines – 5 Minute Farmer
 
