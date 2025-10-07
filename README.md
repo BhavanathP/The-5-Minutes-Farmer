@@ -110,8 +110,8 @@ This TDD describes the modular architecture, systems, and components required to
 The 5 Minutes Farmer. It acts as a blueprint for development, ensuring clean, scalable, and 
 reusable code. 
 ## Week 1 – Core Systems 
-1. Player Movement + Interaction 
---  Input System → abstraction for keyboard/controller/mobile 
+**1. Player Movement + Interaction**
+-  Input System → abstraction for keyboard/controller/mobile 
 -  PlayerManager → central façade, holds references 
 -  PlayerMovementController → handles movement, acceleration, facing 
 -  PlayerInteractionController → raycast/trigger detection for interactions 
