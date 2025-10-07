@@ -55,7 +55,6 @@ Examples:
 - Tasks tracked in Trello.  
 - Pick tasks from **This Sprint** column.  
 - Move card → `In Progress` → `Done` when complete.  
-
 ---
 
 ## GDD
@@ -98,9 +97,57 @@ prototype test for farming loops, scoring systems, and short-session gameplay.
 -  Persistent high score system 
 -  Particle effects & polish 
 # Art & Style 
--  Simple pixel/cartoon style 
+-  Simple pixel/cartoon style
 -  Bright colors, cheerful tone 
 -  Minimal UI for clarity 
-#Sound Design 
+# Sound Design 
 -  Upbeat farming background loop 
 -  SFX for planting, watering, harvesting, game over 
+---
+
+## Technical Design Document (TDD) 
+This TDD describes the modular architecture, systems, and components required to implement 
+The 5 Minutes Farmer. It acts as a blueprint for development, ensuring clean, scalable, and 
+reusable code. 
+# Week 1 – Core Systems 
+1. Player Movement + Interaction 
+-  Input System → abstraction for keyboard/controller/mobile 
+-  PlayerManager → central façade, holds references 
+-  PlayerMovementController → handles movement, acceleration, facing 
+-  PlayerInteractionController → raycast/trigger detection for interactions 
+-  PlayerAnimationController → wraps Animator, handles blending 
+-  PlayerVFXController → optional dust, interaction effects (Optional) 
+-  PlayerSFXController → footsteps, interaction sounds (Optional) 
+2. Farm Grid + Tile States 
+-  GridManager → generates farm grid dynamically 
+-  TileController → state machine (Empty, Planted, Watered, Growing, Harvestable) 
+-  TileData (ScriptableObject) → defines tile/crop properties 
+-  CropManager → controls crop lifecycle and state transitions 
+-  TileVisualController → handles sprite/mesh updates 
+3. Timer System + Crop Growth/Harvest 
+-  GameTimer → 5 min countdown, broadcasts tick/end events 
+-  CropGrowthSystem → subscribes to timer, updates crop growth 
+-  HarvestSystem → handles harvesting, inventory updates 
+4. Score System + Basic UI 
+-  ScoreManager → tracks points, raises OnScoreChanged event 
+-  UIManager → listens to ScoreManager/GameTimer, updates UI 
+-  GameOverUI → shows final score, restart button 
+# Week 2 – Expansion & Polish 
+5. Second Crop Type + Shop System 
+-  CropData (ScriptableObject) → defines crop properties (name, growth, value) 
+-  ShopManager → UI for buying seeds/upgrades 
+-  CurrencyManager → tracks in-game currency 
+-  UnlockSystem → unlocks crops/items when purchased 
+6. Audio + Placeholder Art 
+-  AudioManager → singleton/service locator, pools sounds 
+-  Placeholder Art → simple sprites for farmer, tiles, crops 
+-  VFXController → particle effects for planting/harvesting 
+7. Playtest + Bug Fixes 
+-  Debug logging 
+-  Balance crops (growth vs. value) 
+-  Fix colliders, animation glitches 
+8. Final Polish + Build + Screenshots 
+-  Clean UI layout 
+-  Fix art scaling issues 
+-  Export PC build 
+-  Capture screenshots of gameplay
