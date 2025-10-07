@@ -111,7 +111,7 @@ The 5 Minutes Farmer. It acts as a blueprint for development, ensuring clean, sc
 reusable code. 
 ## Week 1 – Core Systems 
 1. Player Movement + Interaction 
-  -  Input System → abstraction for keyboard/controller/mobile 
+--  Input System → abstraction for keyboard/controller/mobile 
 -  PlayerManager → central façade, holds references 
 -  PlayerMovementController → handles movement, acceleration, facing 
 -  PlayerInteractionController → raycast/trigger detection for interactions 
