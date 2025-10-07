@@ -146,7 +146,7 @@ reusable code.
 -  Debug logging 
 -  Balance crops (growth vs. value) 
 -  Fix colliders, animation glitches 
-8. Final Polish + Build + Screenshots 
+###8. Final Polish + Build + Screenshots 
 -  Clean UI layout 
 -  Fix art scaling issues 
 -  Export PC build 
