@@ -58,33 +58,34 @@ Examples:
 
 ---
 
-5 Minutes Farmer – GDD 
-Project Title 
-The 5 Minutes Farmer 
-Genre 
-Casual / Farming / Time Management 
-Platform 
-PC (expandable later) 
-Camera 
-Top-down 2D 
-High-Level Concept 
+## GDD
+
+#Project Title 
+- The 5 Minutes Farmer 
+#Genre 
+- Casual / Farming / Time Management 
+#Platform 
+- PC (expandable later) 
+#Camera 
+- Top-down 2D 
+#High-Level Concept 
 The 5 Minutes Farmer is a short, fast-paced farming game where the player has only 5 minutes 
 of real time to grow, harvest, and sell as many crops as possible.The game is designed as a 
 prototype test for farming loops, scoring systems, and short-session gameplay. 
-Core Gameplay Loop 
+#Core Gameplay Loop 
 1. The player moves around the farm grid. 
 2. On each tile, they can: 
-○ Plant seed 
-○ Water crop 
-○ Harvest grown crop 
+- ○ Plant seed 
+- ○ Water crop 
+- ○ Harvest grown crop 
 3. Each harvested crop adds to the score. 
 4. Crops vary in growth time and point value. 
 5. When the timer reaches 0:00, the game ends, and the final score is shown. 
-Controls 
+#Controls 
 ● WASD / Arrow Keys → Move 
 ● Spacebar / Left Mouse Click → Interact (plant/water/harvest) 
 ● R → Restart game 
-Features in Scope 
+#Features in Scope 
 ● Timer system (5 minutes countdown) 
 ● Farm grid with tile states (Empty → Planted → Watered → Growing → Harvestable) 
 ● 2 crop types: Carrot (fast, low points), Corn (slow, high points) 
@@ -93,25 +94,14 @@ Features in Scope
 ● UI elements: Timer, Score, Game Over screen 
 ● Basic sound effects (plant, water, harvest, game over) 
 ● Placeholder 2D art (tiles, crops, farmer) 
-Stretch Goals (Optional) 
+#Stretch Goals (Optional) 
 ● Random rain event (auto-waters crops) 
 ● Persistent high score system 
 ● Particle effects & polish 
-Art & Style 
+#Art & Style 
 ● Simple pixel/cartoon style 
 ● Bright colors, cheerful tone 
 ● Minimal UI for clarity 
-Sound Design 
+#Sound Design 
 ● Upbeat farming background loop 
 ● SFX for planting, watering, harvesting, game over 
-Development Timeline (2 Weeks) 
-Week 1 – Core Systems 
-● Player movement + interaction 
-● Farm grid + tile states 
-● Timer system + crop growth/harvest 
-● Score system + basic UI 
-Week 2 – Expansion & Polish 
-● Add 2nd crop type + shop system 
-● Implement audio + placeholder art 
-● Playtest + bug fixes 
-● Final polish + build + screenshots
