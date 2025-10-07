@@ -82,26 +82,25 @@ prototype test for farming loops, scoring systems, and short-session gameplay.
 4. Crops vary in growth time and point value. 
 5. When the timer reaches 0:00, the game ends, and the final score is shown. 
 # Controls 
-● WASD / Arrow Keys → Move 
-● Spacebar / Left Mouse Click → Interact (plant/water/harvest) 
-● R → Restart game 
+- ● WASD / Arrow Keys → Move 
+- ● E → Interact (plant/water/harvest) 
 # Features in Scope 
-● Timer system (5 minutes countdown) 
-● Farm grid with tile states (Empty → Planted → Watered → Growing → Harvestable) 
-● 2 crop types: Carrot (fast, low points), Corn (slow, high points) 
-● Scoring system (points displayed in UI) 
-● Simple shop (unlock crop types/upgrades with harvested points) 
-● UI elements: Timer, Score, Game Over screen 
-● Basic sound effects (plant, water, harvest, game over) 
-● Placeholder 2D art (tiles, crops, farmer) 
+- ● Timer system (5 minutes countdown) 
+- ● Farm grid with tile states (Empty → Planted → Watered → Growing → Harvestable) 
+- ● 2 crop types: Carrot (fast, low points), Corn (slow, high points) 
+- ● Scoring system (points displayed in UI) 
+- ● Simple shop (unlock crop types/upgrades with harvested points) 
+- ● UI elements: Timer, Score, Game Over screen 
+- ● Basic sound effects (plant, water, harvest, game over) 
+- ● Placeholder 2D art (tiles, crops, farmer) 
 # Stretch Goals (Optional) 
-● Random rain event (auto-waters crops) 
-● Persistent high score system 
-● Particle effects & polish 
+- ● Random rain event (auto-waters crops) 
+- ● Persistent high score system 
+- ● Particle effects & polish 
 # Art & Style 
-● Simple pixel/cartoon style 
-● Bright colors, cheerful tone 
-● Minimal UI for clarity 
+- ● Simple pixel/cartoon style 
+- ● Bright colors, cheerful tone 
+- ● Minimal UI for clarity 
 #Sound Design 
-● Upbeat farming background loop 
-● SFX for planting, watering, harvesting, game over 
+- ● Upbeat farming background loop 
+- ● SFX for planting, watering, harvesting, game over 
