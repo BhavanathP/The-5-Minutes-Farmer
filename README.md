@@ -117,35 +117,42 @@ reusable code.
 -  PlayerInteractionController → raycast/trigger detection for interactions 
 -  PlayerAnimationController → wraps Animator, handles blending 
 -  PlayerVFXController → optional dust, interaction effects (Optional) 
--  PlayerSFXController → footsteps, interaction sounds (Optional) 
+-  PlayerSFXController → footsteps, interaction sounds (Optional)
+  
 *2. Farm Grid + Tile States*
 -  GridManager → generates farm grid dynamically 
 -  TileController → state machine (Empty, Planted, Watered, Growing, Harvestable) 
 -  TileData (ScriptableObject) → defines tile/crop properties 
 -  CropManager → controls crop lifecycle and state transitions 
--  TileVisualController → handles sprite/mesh updates 
+-  TileVisualController → handles sprite/mesh updates
+  
 *3. Timer System + Crop Growth/Harvest*
 -  GameTimer → 5 min countdown, broadcasts tick/end events 
 -  CropGrowthSystem → subscribes to timer, updates crop growth 
--  HarvestSystem → handles harvesting, inventory updates 
+-  HarvestSystem → handles harvesting, inventory updates
+  
 *4. Score System + Basic UI* 
 -  ScoreManager → tracks points, raises OnScoreChanged event 
 -  UIManager → listens to ScoreManager/GameTimer, updates UI 
--  GameOverUI → shows final score, restart button 
+-  GameOverUI → shows final score, restart button
+  
 ## Week 2 – Expansion & Polish 
 *5. Second Crop Type + Shop System* 
 -  CropData (ScriptableObject) → defines crop properties (name, growth, value) 
 -  ShopManager → UI for buying seeds/upgrades 
 -  CurrencyManager → tracks in-game currency 
--  UnlockSystem → unlocks crops/items when purchased 
+-  UnlockSystem → unlocks crops/items when purchased
+  
 *6. Audio + Placeholder Art*
 -  AudioManager → singleton/service locator, pools sounds 
 -  Placeholder Art → simple sprites for farmer, tiles, crops 
--  VFXController → particle effects for planting/harvesting 
+-  VFXController → particle effects for planting/harvesting
+  
 *7. Playtest + Bug Fixes* 
 -  Debug logging 
 -  Balance crops (growth vs. value) 
--  Fix colliders, animation glitches 
+-  Fix colliders, animation glitches
+  
 *8. Final Polish + Build + Screenshots*
 -  Clean UI layout 
 -  Fix art scaling issues 
